@@ -1,0 +1,5 @@
+{
+	"username": {{inp_registerUsername.text}},
+	"email": {{inp_registerEmail.text}},
+	"password": {{inp_registerPassword.text}}
+}
