@@ -1,7 +1,6 @@
 export default {
 	Switch1onChange (listingId) {
-		if (Switch1.isDisabled) {
-			showAlert("Switch is disabled")
+		if (Switch1.isSwitchedOn) {
 			console.log("Listing is disabled, enable it")
 			Listing_Enable.run({ listingId })
 				.then((response) => {
@@ -10,7 +9,6 @@ export default {
 				}) // run after the query is successful
         .catch(() => {showAlert("Error: listing not enabled")}) // run if the query encounters any errors
 		} else {
-			showAlert("Switch is enabled")
 			console.log("Listing is enabled, disable it")
 			Listing_Disable.run({ listingId })
 				.then((response) => {
@@ -21,11 +19,3 @@ export default {
 		}
 	}
 }
-
-saveUserId: async() => {
-		const userId = User_Register.data._id;
-		console.log("userId");
-		console.log(userId);
-		.then((response) => {...}) // run after the query is successful
-        .catch(() => {...}) // run if the query encounters any errors
-	},
