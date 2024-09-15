@@ -1,4 +1,4 @@
 {
-	"userId": "{{appsmith.store.userId}}",
-	"provider": "airbnb"
+    "userId": "{{appsmith.store.userId}}",
+    "provider": "airbnb"
 }

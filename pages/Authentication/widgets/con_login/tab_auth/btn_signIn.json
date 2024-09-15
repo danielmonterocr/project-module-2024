@@ -29,7 +29,7 @@
   "isVisible": true,
   "key": "d80868s2dr",
   "leftColumn": 2,
-  "onClick": "{{User_Login.run().then(() => {\n  storeValue('token', storeValue('token', User_Login.responseMeta.headers.token, true));\n  showAlert('User logged in', 'success');\n  navigateTo('Listings', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Error: user not logged in', 'error');\n});}}",
+  "onClick": "{{User_Login.run().then(() => {\n  storeValue('token', User_Login.responseMeta.headers.token);\n  showAlert('User logged in', 'success');\n  navigateTo('Listings', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Error: user not logged in', 'error');\n});}}",
   "originalBottomRow": 46,
   "originalTopRow": 40,
   "parentColumnSpace": 18.1875,

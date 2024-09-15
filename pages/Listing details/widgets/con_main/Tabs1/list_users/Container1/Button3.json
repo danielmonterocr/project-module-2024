@@ -3,13 +3,10 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#b91c1c",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    },
     {
       "key": "borderRadius"
     }
@@ -32,7 +29,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('Listing details', {\n  \"listingId\": Text2Copy1.text\n}, 'SAME_WINDOW');}}",
+  "onClick": "{{functions.Switch1onChange();}}",
   "parentColumnSpace": 8.2412109375,
   "parentId": "om4u7kwd35",
   "parentRowSpace": 10,
@@ -42,7 +39,7 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 62,
-  "text": "Details",
+  "text": "Delete",
   "topRow": 9,
   "type": "BUTTON_WIDGET",
   "version": 1,

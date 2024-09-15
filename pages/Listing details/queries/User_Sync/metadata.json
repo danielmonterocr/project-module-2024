@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66e4cc0340cad441592313c6_fb41b85c-8c4e-426f-b29c-acdfea1caf1d",
-  "id": "Listings_Provider_Register",
+  "gitSyncId": "66e4cc0340cad441592313c6_58f67d5b-4ee0-4a0a-9e18-f5f36ea509b4",
+  "id": "Listing details_User_Sync",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n    \"userId\": \"{{appsmith.store.userId}}\",\n    \"provider\": \"airbnb\"\n}",
+      "body": "",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -26,13 +26,18 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/api/providers",
+      "path": "/api/users/{{appsmith.store.userId}}/sync",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "provider",
+          "value": "airbnb"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -44,15 +49,15 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "path"
       },
       {
         "key": "headers[0].value"
       }
     ],
     "executeOnLoad": false,
-    "name": "Provider_Register",
-    "pageId": "Listings",
+    "name": "User_Sync",
+    "pageId": "Listing details",
     "userSetOnLoad": false
   }
 }
