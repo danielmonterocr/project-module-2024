@@ -38,7 +38,7 @@
   "originalBottomRow": 25,
   "originalTopRow": 20,
   "parentColumnSpace": 12.6865234375,
-  "parentId": "gzitgrm8n6",
+  "parentId": "91greczj5l",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -54,6 +54,6 @@
   "topRow": 1,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "eh8nu9zkuu",
-  "widgetName": "icn_resetFilters"
+  "widgetId": "6nheq3kj9h",
+  "widgetName": "icn_resetFiltersCopy"
 }
