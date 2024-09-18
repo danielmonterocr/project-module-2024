@@ -99,6 +99,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onItemClick"
     }
   ],
   "enhancements": true,
@@ -131,6 +134,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onItemClick": "{{navigateTo('Listing details', {\n\t\"listingId\": Text2Copy1.text,\n}, 'SAME_WINDOW');}}",
   "onPageChange": "{{Listings_Fetch.run()}}",
   "pageSize": 3,
   "parentColumnSpace": 26.09375,

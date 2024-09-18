@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 4,
   "boxShadow": "none",
   "displayName": "Text",
   "dynamicBindingPathList": [
@@ -49,7 +49,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "overflow": "NONE",
-  "parentId": "om4u7kwd35",
+  "parentId": "qfmp325new",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 36,
@@ -63,15 +63,15 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{currentItem.title}}",
+  "text": "{{currentItem.deviceName}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "textStyle": "HEADING",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 1,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "cj50vd1b8l",
+  "widgetId": "zy1pgl5c9v",
   "widgetName": "Text1"
 }

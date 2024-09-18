@@ -1,12 +1,12 @@
 {
-  "gitSyncId": "66e4cc0340cad441592313c6_2eb8e735-e1f0-4c50-a151-f9ec9bf9bfeb",
+  "gitSyncId": "66e4cc0340cad441592313c6_df3a15e6-b51c-4e8b-a9de-762e03703375",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 800,
+          "bottomRow": 810,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "Listing details",
-    "slug": "listing-details"
+    "name": "Devices",
+    "slug": "devices"
   }
 }

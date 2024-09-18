@@ -1,5 +1,0 @@
-{
-    "deviceName": {{Input1.text}},
-    "deviceType": {{Select1.selectedOptionValue}},
-    "listingId": "{{appsmith.URL.queryParams.listingId}}"
-}

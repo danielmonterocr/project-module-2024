@@ -31,6 +31,10 @@
     {
       "id": "Listing details",
       "isDefault": false
+    },
+    {
+      "id": "Devices",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
