@@ -112,7 +112,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "showDataPointLabel": false,
-  "topRow": 7,
+  "topRow": 0,
   "type": "CHART_WIDGET",
   "version": 1,
   "widgetId": "sc76smug2z",

@@ -27,7 +27,12 @@
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "listingId",
+          "value": "{{appsmith.URL.queryParams.listingId}}"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -40,6 +45,9 @@
     "dynamicBindingPathList": [
       {
         "key": "headers[0].value"
+      },
+      {
+        "key": "queryParameters[0].value"
       }
     ],
     "executeOnLoad": true,

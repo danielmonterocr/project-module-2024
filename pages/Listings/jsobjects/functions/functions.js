@@ -17,5 +17,8 @@ export default {
 				}) // run after the query is successful
         .catch(() => {showAlert("Error: listing not disabled")}) // run if the query encounters any errors
 		}
+	},
+	NavigateToDevices (listingId) {
+		console.log(listingId);
 	}
 }

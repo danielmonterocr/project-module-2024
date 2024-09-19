@@ -32,7 +32,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('Devices', {}, 'SAME_WINDOW');\nstoreValue('listingId', Text2Copy1.text);}}",
+  "onClick": "{{navigateTo('Devices', {\n  \"listingId\": list_users.triggeredItemView.Text2Copy1.text\n}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 8.2412109375,
   "parentId": "om4u7kwd35",
   "parentRowSpace": 10,
