@@ -99,6 +99,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onItemClick"
     }
   ],
   "enhancements": true,
@@ -115,7 +118,7 @@
   "itemSpacing": 8,
   "key": "gto97zrcgn",
   "leftColumn": 1,
-  "listData": "{{Devices_Fetch.data}}",
+  "listData": "{{Reports_Fetch.data}}",
   "mainCanvasId": "3bjnqvzz7i",
   "mainContainerId": "6qpme5gs3a",
   "minWidth": 450,
@@ -131,6 +134,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onItemClick": "{{showModal(Modal1.name).then(() => {});}}",
   "onPageChange": "{{Devices_Fetch.run()}}",
   "originalBottomRow": 77,
   "originalTopRow": 43,
@@ -144,7 +148,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "selectedItemView": "{{{}}}",
-  "serverSidePagination": true,
+  "serverSidePagination": false,
   "tags": [
     "Suggested",
     "Display"

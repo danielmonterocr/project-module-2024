@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 8,
   "boxShadow": "none",
   "displayName": "Text",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "parentId": "eww5o5uett",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 44,
+  "rightColumn": 26,
   "searchTags": [
     "typography",
     "paragraph",
@@ -63,12 +63,12 @@
     "Suggested",
     "Content"
   ],
-  "text": "Id: {{currentItem.deviceId}}",
+  "text": "Electricity used: {{currentItem.electricityUsed}} kW",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "textStyle": "BODY",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 5,
+  "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 12,
   "boxShadow": "none",
   "displayName": "Text",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "parentId": "eww5o5uett",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 43,
+  "rightColumn": 11,
   "searchTags": [
     "typography",
     "paragraph",
@@ -63,12 +63,12 @@
     "Suggested",
     "Content"
   ],
-  "text": "Token: {{currentItem.deviceToken}}",
+  "text": "Water used: {{currentItem.waterUsed}} L",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "textStyle": "BODY",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 9,
+  "topRow": 8,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

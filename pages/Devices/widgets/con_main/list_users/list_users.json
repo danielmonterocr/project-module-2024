@@ -144,7 +144,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "selectedItemView": "{{{}}}",
-  "serverSidePagination": true,
+  "serverSidePagination": false,
   "tags": [
     "Suggested",
     "Display"

@@ -6,6 +6,9 @@
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
+      "key": "text"
+    },
+    {
       "key": "truncateButtonColor"
     },
     {
@@ -21,7 +24,7 @@
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.25rem",
+  "fontSize": "1rem",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.a55b701a2ae86aa2c6718ecb7b4083f0.svg",
@@ -29,14 +32,14 @@
   "isLoading": false,
   "isVisible": true,
   "key": "b6m5perck8",
-  "leftColumn": 0,
+  "leftColumn": 44,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 4,
+  "mobileBottomRow": 8,
   "mobileLeftColumn": 16,
-  "mobileRightColumn": 28,
-  "mobileTopRow": 0,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 4,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -49,7 +52,7 @@
   "parentId": "eww5o5uett",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 20,
+  "rightColumn": 63,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,15 +63,15 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{currentItem.reservationId}}",
-  "textAlign": "LEFT",
+  "text": "{{currentItem.type.toUpperCase()}}",
+  "textAlign": "RIGHT",
   "textColor": "#231F20",
-  "textStyle": "HEADING",
+  "textStyle": "BODY",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "w56dievpvw",
-  "widgetName": "Text1Copy"
+  "widgetId": "e23jrpkqtp",
+  "widgetName": "Text2Copy1CopyCopy"
 }
