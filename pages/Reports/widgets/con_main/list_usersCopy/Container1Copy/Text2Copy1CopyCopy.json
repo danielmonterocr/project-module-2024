@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 4,
   "boxShadow": "none",
   "displayName": "Text",
   "dynamicBindingPathList": [
@@ -25,14 +25,14 @@
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
-  "fontStyle": "",
+  "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.a55b701a2ae86aa2c6718ecb7b4083f0.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
   "key": "b6m5perck8",
-  "leftColumn": 46,
+  "leftColumn": 44,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -49,7 +49,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "overflow": "NONE",
-  "parentId": "om4u7kwd35",
+  "parentId": "lpta9qljat",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,
@@ -63,15 +63,15 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{currentItem.provider.toUpperCase()}}",
+  "text": "{{currentItem.type.toUpperCase()}}",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
   "textStyle": "BODY",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 5,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "tw8lhe3j41",
-  "widgetName": "Text2Copy2"
+  "widgetId": "dreuqf9r76",
+  "widgetName": "Text2Copy1CopyCopy"
 }

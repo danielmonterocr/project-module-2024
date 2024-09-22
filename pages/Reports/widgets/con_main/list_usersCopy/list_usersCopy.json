@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 69,
+  "bottomRow": 71,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 520,
+      "bottomRow": 540,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -56,7 +56,7 @@
       },
       "openParentPropertyPane": true,
       "parentColumnSpace": 1,
-      "parentId": "v6bn2e64ob",
+      "parentId": "cwznfnokhc",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -64,8 +64,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "solo1fqti5",
-      "widgetName": "Canvas2"
+      "widgetId": "614xqqte27",
+      "widgetName": "Canvas2Copy"
     }
   ],
   "currentItemsView": "{{[]}}",
@@ -118,9 +118,9 @@
   "itemSpacing": 8,
   "key": "gto97zrcgn",
   "leftColumn": 0,
-  "listData": "{{Listings_Fetch.data}}",
-  "mainCanvasId": "solo1fqti5",
-  "mainContainerId": "op5ztlvzm1",
+  "listData": "{{Reports_Fetch.data}}",
+  "mainCanvasId": "614xqqte27",
+  "mainContainerId": "qjnve0u6ce",
   "minWidth": 450,
   "mobileBottomRow": 64,
   "mobileLeftColumn": 33,
@@ -134,17 +134,19 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onItemClick": "{{navigateTo('Dashboards', {\n  \"listingId\": list_users.triggeredItemView.Text2Copy1.text\n}, 'SAME_WINDOW');}}",
-  "onPageChange": "{{Listings_Fetch.run()}}",
+  "onItemClick": "{{showModal(Modal1.name).then(() => {});}}",
+  "onPageChange": "{{Devices_Fetch.run()}}",
+  "originalBottomRow": 77,
+  "originalTopRow": 43,
   "pageSize": 3,
   "parentColumnSpace": 26.09375,
   "parentId": "o2rxh0tnh6",
   "parentRowSpace": 10,
-  "primaryKeys": "{{list_users.listData.map((currentItem, currentIndex) => currentItem[\"_id\"] )}}",
+  "primaryKeys": "{{list_usersCopy.listData.map((currentItem, currentIndex) => currentItem[\"_id\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "selectedItemView": "{{{}}}",
   "serverSidePagination": false,
   "tags": [
@@ -156,6 +158,6 @@
   "topRow": 17,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
-  "widgetId": "v6bn2e64ob",
-  "widgetName": "list_users"
+  "widgetId": "cwznfnokhc",
+  "widgetName": "list_usersCopy"
 }

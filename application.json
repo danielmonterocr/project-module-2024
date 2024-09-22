@@ -29,11 +29,15 @@
       "isDefault": true
     },
     {
-      "id": "Listing details",
+      "id": "Dashboards",
       "isDefault": false
     },
     {
       "id": "Devices",
+      "isDefault": false
+    },
+    {
+      "id": "Reports",
       "isDefault": false
     }
   ],
