@@ -1,7 +1,7 @@
 SELECT * FROM user_data 
 WHERE name ILIKE '{{"%" + inp_name.text + "%"}}'
 AND dob >= '{{dat_bornAfter.selectedDate}}'
-{{sel_country.selectedOptionValue !== "" ? "AND country = '" + sel_country.selectedOptionValue + "'" : ""}}
+{{sel_filterProvider.selectedOptionValue !== "" ? "AND country = '" + sel_filterProvider.selectedOptionValue + "'" : ""}}
 ORDER BY id
-OFFSET {{(list_users.pageNo - 1) * list_users.pageSize}}
-LIMIT {{list_users.pageSize}}
+OFFSET {{(list_listings.pageNo - 1) * list_listings.pageSize}}
+LIMIT {{list_listings.pageSize}}

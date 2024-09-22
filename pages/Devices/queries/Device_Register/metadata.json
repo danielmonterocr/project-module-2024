@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n    \"deviceName\": {{Input1.text}},\n    \"deviceType\": {{Select1.selectedOptionValue}},\n    \"listingId\": {{appsmith.store.listingId}}\n}",
+      "body": "{\n    \"deviceName\": {{inp_deviceName.text}},\n    \"deviceType\": {{sel_deviceType.selectedOptionValue}},\n    \"listingId\": {{appsmith.store.listingId}}\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

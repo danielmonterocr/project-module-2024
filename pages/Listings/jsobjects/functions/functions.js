@@ -1,11 +1,11 @@
 export default {
 	Switch1onChange (listingId) {
-		if (!Switch1.isSwitchedOn) {
+		if (!stw_enable.isSwitchedOn) {
 			console.log("Listing is disabled, enable it")
 			Listing_Enable.run({ listingId })
 				.then((response) => {
 					showAlert("Listing enabled")
-					Switch1.setValue(true);
+					stw_enable.setValue(true);
 					return response
 				}) // run after the query is successful
         .catch(() => {showAlert("Error: listing not enabled")}) // run if the query encounters any errors
@@ -14,7 +14,7 @@ export default {
 			Listing_Disable.run({ listingId })
 				.then((response) => {
 					showAlert("Listing disabled")
-					Switch1.setValue(false);
+					stw_enable.setValue(false);
 					return response
 				}) // run after the query is successful
         .catch(() => {showAlert("Error: listing not disabled")}) // run if the query encounters any errors

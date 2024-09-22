@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM user_data \nWHERE name ILIKE '{{\"%\" + inp_name.text + \"%\"}}'\nAND dob >= '{{dat_bornAfter.selectedDate}}'\n{{sel_country.selectedOptionValue !== \"\" ? \"AND country = '\" + sel_country.selectedOptionValue + \"'\" : \"\"}}\nORDER BY id\nOFFSET {{(list_users.pageNo - 1) * list_users.pageSize}}\nLIMIT {{list_users.pageSize}}",
+      "body": "SELECT * FROM user_data \nWHERE name ILIKE '{{\"%\" + inp_name.text + \"%\"}}'\nAND dob >= '{{dat_bornAfter.selectedDate}}'\n{{sel_type.selectedOptionValue !== \"\" ? \"AND country = '\" + sel_type.selectedOptionValue + \"'\" : \"\"}}\nORDER BY id\nOFFSET {{(list_devices.pageNo - 1) * list_devices.pageSize}}\nLIMIT {{list_devices.pageSize}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

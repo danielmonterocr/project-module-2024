@@ -1,5 +1,5 @@
 {
-    "deviceName": {{Input1.text}},
-    "deviceType": {{Select1.selectedOptionValue}},
+    "deviceName": {{inp_deviceName.text}},
+    "deviceType": {{sel_deviceType.selectedOptionValue}},
     "listingId": {{appsmith.store.listingId}}
 }
