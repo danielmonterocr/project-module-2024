@@ -66,11 +66,20 @@ export default {
 		return response2;
 	},
 
-	refreshCharts: async (startDate, endDate) => {
-		const newStartDate = new Date(startDate).getTime();
-		const newEndDate = new Date(endDate).getTime();
+	refreshCharts: async () => {
+		const newStartDate = new Date(date_1.selectedDate).getTime();
+		const newEndDate = new Date(date_2.selectedDate).getTime();
+		// const newStartDate = new Date(startDate).getTime() || new Date(Date.now() - 86400000);
+		// const newEndDate = new Date(endDate).getTime() || new Date();
+		// const newStartDate2 = new Date(Date.now() - 86400000).getTime();
+		// const newEndDate2 = new Date(Date.now()).getTime();
 		console.log(newStartDate);
 		console.log(newEndDate);
+
+		// return { 
+			// "newStartDate": newStartDate, 
+			// "newEndDate": newEndDate
+		// }
 
 		try {
 			await functions.fetchTbTelemetryPower(newStartDate, newEndDate);
