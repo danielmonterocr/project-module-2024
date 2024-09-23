@@ -6,14 +6,7 @@
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [
-        {
-          "name": "startDate"
-        },
-        {
-          "name": "endDate"
-        }
-      ],
+      "jsArguments": [],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
@@ -29,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "functions.fetchTbTelemetryTemperature",
     "name": "fetchTbTelemetryTemperature",
     "pageId": "Dashboards",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

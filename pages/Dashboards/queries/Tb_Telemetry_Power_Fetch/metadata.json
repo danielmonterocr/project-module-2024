@@ -79,7 +79,7 @@
         "key": "headers[0].value"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Tb_Telemetry_Power_Fetch",
     "pageId": "Dashboards",
     "userSetOnLoad": false

@@ -79,7 +79,7 @@
         "key": "queryParameters[4].value"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Tb_Telemetry_Temperature_Fetch",
     "pageId": "Dashboards",
     "userSetOnLoad": false

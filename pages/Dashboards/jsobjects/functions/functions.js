@@ -5,52 +5,71 @@ export default {
 		return response.token;
 	},
 
-	fetchTbTelemetryPower: async (startDate, endDate) => {
+	fetchTbTelemetryPower: async () => {
 		const response1 = await Tb_Token_Fetch.run();
 		const token = response1.token
-		console.log(token);
 		const deviceId = "d013d1c0-6727-11ef-a50e-c9c50c532dda";
+		const startDate = new Date(date_1.selectedDate).getTime();
+		const endDate = new Date(date_2.selectedDate).getTime();
 		const limit = 1440;
-
-		const response2 = await Tb_Telemetry_Power_Fetch.run({
+		
+		const params = {
 			token,
 			deviceId, 
 			startDate, 
 			endDate,
 			limit
-		});
+		};
+		console.log(params);
 
-		console.log(response2);
-		console.log(response2.power1.map(power1 => power1.value));
+		const response2 = await Tb_Telemetry_Power_Fetch.run(params);
+		// console.log(response2);
+		// console.log(response2.power1.map(power1 => power1.value));
 		return response2;
 	},
 
-	fetchTbTelemetryWaterFlow: async (startDate, endDate) => {
+	fetchTbTelemetryWaterFlow: async () => {
 		const response1 = await Tb_Token_Fetch.run();
 		const token = response1.token
 		console.log(token);
 		const deviceId = "c48de100-6728-11ef-a50e-c9c50c532dda";
+		const startDate = new Date(date_1.selectedDate).getTime();
+		const endDate = new Date(date_2.selectedDate).getTime();
 		const limit = 1440;
-
-		const response2 = await Tb_Telemetry_Water_Flow_Fetch.run({
+		
+		const params = {
 			token,
 			deviceId, 
 			startDate, 
 			endDate,
 			limit
-		});
+		};
+		console.log(params);
 
-		console.log(response2);
-		console.log(response2.totalLiters.map(totalLiters => totalLiters.value));
+		const response2 = await Tb_Telemetry_Water_Flow_Fetch.run(params);
+
+		// console.log(response2);
+		// console.log(response2.totalLiters.map(totalLiters => totalLiters.value));
 		return response2;
 	},
 
-	fetchTbTelemetryTemperature: async (startDate, endDate) => {
+	fetchTbTelemetryTemperature: async () => {
 		const response1 = await Tb_Token_Fetch.run();
 		const token = response1.token
 		console.log(token);
 		const deviceId = "ff66bfc0-6716-11ef-a50e-c9c50c532dda";
+		const startDate = new Date(date_1.selectedDate).getTime();
+		const endDate = new Date(date_2.selectedDate).getTime();
 		const limit = 1440;
+		
+		const params = {
+			token,
+			deviceId, 
+			startDate, 
+			endDate,
+			limit
+		};
+		console.log(params);
 
 		const response2 = await Tb_Telemetry_Temperature_Fetch.run({
 			token,
@@ -60,31 +79,17 @@ export default {
 			limit
 		});
 
-		console.log(response2);
-		console.log(response2.temperature1.map(temperature1 => temperature1.value));
-		console.log(response2.temperature2.map(temperature2 => temperature2.value));
+		// console.log(response2);
+		// console.log(response2.temperature1.map(temperature1 => temperature1.value));
+		// console.log(response2.temperature2.map(temperature2 => temperature2.value));
 		return response2;
 	},
 
 	refreshCharts: async () => {
-		const newStartDate = new Date(date_1.selectedDate).getTime();
-		const newEndDate = new Date(date_2.selectedDate).getTime();
-		// const newStartDate = new Date(startDate).getTime() || new Date(Date.now() - 86400000);
-		// const newEndDate = new Date(endDate).getTime() || new Date();
-		// const newStartDate2 = new Date(Date.now() - 86400000).getTime();
-		// const newEndDate2 = new Date(Date.now()).getTime();
-		console.log(newStartDate);
-		console.log(newEndDate);
-
-		// return { 
-			// "newStartDate": newStartDate, 
-			// "newEndDate": newEndDate
-		// }
-
 		try {
-			await functions.fetchTbTelemetryPower(newStartDate, newEndDate);
-			await functions.fetchTbTelemetryWaterFlow(newStartDate, newEndDate);
-			await functions.fetchTbTelemetryTemperature(newStartDate, newEndDate);
+			await functions.fetchTbTelemetryPower();
+			await functions.fetchTbTelemetryWaterFlow();
+			await functions.fetchTbTelemetryTemperature();
 
 			return { message: 'Charts refreshed' };
 		} catch (err) {
