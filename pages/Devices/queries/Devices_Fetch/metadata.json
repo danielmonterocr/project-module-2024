@@ -47,6 +47,9 @@
         "key": "headers[0].value"
       },
       {
+        "key": "path"
+      },
+      {
         "key": "queryParameters[0].value"
       }
     ],
