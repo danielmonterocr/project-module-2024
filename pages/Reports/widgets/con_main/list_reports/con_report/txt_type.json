@@ -32,7 +32,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "b6m5perck8",
-  "leftColumn": 44,
+  "leftColumn": 49,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -52,7 +52,7 @@
   "parentId": "lpta9qljat",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "searchTags": [
     "typography",
     "paragraph",

@@ -32,7 +32,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onChange": "{{functions.Switch1onChange(list_listings.triggeredItemView.Text2Copy1.text);}}",
+  "onChange": "{{functions.Switch1onChange(list_listings.triggeredItemView.txt_listingId.text);}}",
   "parentColumnSpace": 8.2412109375,
   "parentId": "om4u7kwd35",
   "parentRowSpace": 10,

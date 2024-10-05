@@ -22,7 +22,7 @@
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1.25rem",
-  "fontStyle": "BOLD",
+  "fontStyle": "",
   "hideCard": false,
   "iconSVG": "/static/media/icon.a55b701a2ae86aa2c6718ecb7b4083f0.svg",
   "isDeprecated": false,
@@ -49,7 +49,7 @@
   "parentId": "lpta9qljat",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 34,
+  "rightColumn": 46,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,7 +60,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{currentItem.reservationId}}",
+  "text": "Reservation Id: {{currentItem.reservationId}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "textStyle": "HEADING",

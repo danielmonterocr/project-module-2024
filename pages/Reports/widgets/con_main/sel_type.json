@@ -42,7 +42,7 @@
   "labelText": "Type",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 27,
+  "leftColumn": 30,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -58,12 +58,12 @@
   "placeholderText": "Any",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 43,
+  "rightColumn": 46,
   "searchTags": [
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"label\": \"United States\",\n    \"value\": \"United States\"\n  },\n  {\n    \"label\": \"Australia\",\n    \"value\": \"Australia\"\n  },\n  {\n    \"label\": \"United Kingdom\",\n    \"value\": \"United Kingdom\"\n  },\n\t{\n    \"label\": \"France\",\n    \"value\": \"France\"\n  },\n  {\n    \"label\": \"Spain\",\n    \"value\": \"Spain\"\n  },\n\t{\n    \"label\": \"China\",\n    \"value\": \"China\"\n  },\n\t{\n    \"label\": \"Germany\",\n    \"value\": \"Germany\"\n  },\n\t{\n    \"label\": \"Chile\",\n    \"value\": \"Chile\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"Daily\",\n    \"value\": \"daily\"\n  },\n  {\n    \"label\": \"Total\",\n    \"value\": \"total\"\n  }\n]",
   "topRow": 10,
   "type": "SELECT_WIDGET",
   "version": 1,
