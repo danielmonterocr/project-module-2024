@@ -53,7 +53,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onTextChanged": "{{fetch_users.run();\nresetWidget(\"list_users\", true);}}",
+  "onTextChanged": "{{Listings_Fetch.run({\n  \"title\": inp_name.text,\n  \"provider\": sel_filterProvider.selectedOptionValue\n});\nresetWidget(\"list_listings\", true);}}",
   "parentColumnSpace": 12.32666015625,
   "parentId": "o2rxh0tnh6",
   "parentRowSpace": 10,

@@ -27,7 +27,16 @@
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "title",
+          "value": "{{this.params.title}}"
+        },
+        {
+          "key": "provider",
+          "value": "{{this.params.provider}}"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -40,6 +49,12 @@
     "dynamicBindingPathList": [
       {
         "key": "headers[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
+      },
+      {
+        "key": "queryParameters[0].value"
       }
     ],
     "executeOnLoad": true,
