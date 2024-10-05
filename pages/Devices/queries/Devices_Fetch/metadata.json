@@ -31,6 +31,14 @@
         {
           "key": "listingId",
           "value": "{{appsmith.URL.queryParams.listingId}}"
+        },
+        {
+          "key": "deviceName",
+          "value": "{{this.params.deviceName}}"
+        },
+        {
+          "key": "deviceType",
+          "value": "{{this.params.deviceType}}"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -51,6 +59,12 @@
       },
       {
         "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
+      },
+      {
+        "key": "queryParameters[2].value"
       }
     ],
     "executeOnLoad": true,

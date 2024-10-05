@@ -34,7 +34,7 @@
   "mobileLeftColumn": 58,
   "mobileRightColumn": 62,
   "mobileTopRow": 8,
-  "onClick": "{{Listings_Fetch.run().then(() => {\n  showAlert('Listings retrieved', 'success');\n}).catch(() => {\n  showAlert('Error: listings not retrieved', 'error');\n});}}",
+  "onClick": "{{Listings_Fetch.run({\n  \"title\": \"\",\n  \"provider\": \"\"\n}).then(() => {\n  showAlert('Listings retrieved', 'success');\n}).catch(() => {\n  showAlert('Error: listings not retrieved', 'error');\n});\nresetWidget(\"inp_name\", true);\nresetWidget(\"sel_filterProvider\", true);}}",
   "originalBottomRow": 17,
   "originalTopRow": 12,
   "parentColumnSpace": 12.6865234375,
