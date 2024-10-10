@@ -51,6 +51,10 @@
         {
           "key": "useStrictDataTypes",
           "value": "false"
+        },
+        {
+          "key": "orderBy",
+          "value": "ASC"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -67,6 +71,9 @@
         "key": "path"
       },
       {
+        "key": "headers[0].value"
+      },
+      {
         "key": "queryParameters[1].value"
       },
       {
@@ -74,9 +81,6 @@
       },
       {
         "key": "queryParameters[4].value"
-      },
-      {
-        "key": "headers[0].value"
       }
     ],
     "executeOnLoad": false,

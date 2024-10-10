@@ -4,13 +4,18 @@
   "animateLoading": true,
   "bottomRow": 5,
   "boxShadow": "none",
-  "defaultSwitchState": false,
+  "defaultSwitchState": "false",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultSwitchState"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onChange"

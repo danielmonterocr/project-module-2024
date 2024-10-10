@@ -5,7 +5,7 @@ export default {
 		Listings_Fetch.run({ title, provider });
 	},
 	Switch1onChange (listingId) {
-		if (!stw_enable.isSwitchedOn) {
+		if (stw_enable.isSwitchedOn) {
 			console.log("Listing is disabled, enable it")
 			Listing_Enable.run({ listingId })
 				.then((response) => {
