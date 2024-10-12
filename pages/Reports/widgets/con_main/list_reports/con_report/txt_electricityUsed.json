@@ -63,7 +63,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Electricity used: {{currentItem.electricityUsed}} kW",
+  "text": "Electricity used: {{currentItem.electricityUsed.toFixed(2)}} kW",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
   "textStyle": "BODY",

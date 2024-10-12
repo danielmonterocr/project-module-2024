@@ -63,7 +63,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Water used: {{currentItem.waterUsed}} L",
+  "text": "Water used: {{currentItem.waterUsed.toFixed(2)}} L",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
   "textStyle": "BODY",
